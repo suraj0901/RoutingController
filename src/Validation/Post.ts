@@ -1,11 +1,11 @@
 import { IsInt, IsString } from "class-validator";
 
 export class PostQuery {
-  @IsInt()
-  limit: number | undefined;
+  @IsInt() 
+  limit!: number;
 
   @IsInt()
-  offset!: number | undefined;
+  offset!: number;
 }
 
 export class Post {
